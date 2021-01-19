@@ -3,12 +3,12 @@
 	padding-bottom: 94px;
 }
 
-.filters_list {
+.filters__list {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.filter_name:not(:last-child) {
+.filters__name:not(:last-child) {
 	margin-right: 8px;
 }

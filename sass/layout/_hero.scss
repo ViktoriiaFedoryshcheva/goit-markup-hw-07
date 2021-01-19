@@ -9,18 +9,18 @@
 	background-position: center;
 	background-size: cover;
 	background-color: #2f303a;
-}
 
-.hero_title {
-	font-weight: 900;
-	font-size: 44px;
-	line-height: 1.36;
-	/* or 136% */
+	&__title {
+		font-weight: 900;
+		font-size: 44px;
+		line-height: 1.36;
+		/* or 136% */
 
-	text-align: center;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
-	color: #ffffff;
+		text-align: center;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: #ffffff;
 
-	padding-top: 200px;
+		padding-top: 200px;
+	}
 }

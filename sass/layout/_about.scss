@@ -5,7 +5,7 @@
 	align-items: center; */
 }
 
-.about_title {
+.about__title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.167;
@@ -15,21 +15,21 @@
 	color: #212121;
 }
 
-.about_list {
+.about__list {
 	display: flex;
 	align-items: center;
 	margin-top: 50px;
 }
 
-.about_img {
+.about__img {
 	position: relative;
 	flex-basis: calc((100%-60) / 3);
 	/* 370px; */
 	overflow: hidden;
-}
 
-.about_img:not(:last-child) {
-	margin-right: 30px;
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
 }
 
 .label {

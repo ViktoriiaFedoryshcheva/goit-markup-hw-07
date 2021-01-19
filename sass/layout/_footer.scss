@@ -1,4 +1,4 @@
-.logo_white {
+.logo__white {
 	color: #ffffff;
 }
 
@@ -23,7 +23,7 @@
 	width: 231px;
 }
 
-.address_footer {
+.footer__address {
 	display: block;
 }
 .post_address {
@@ -32,8 +32,8 @@
 	color: #ffffff;
 	margin: 20px 0 0 0;
 }
-.footer_contact_mail,
-.footer_contact_tel {
+.footer__contact_mail,
+.footer__contact_tel {
 	display: inline-block;
 	font-style: normal;
 	font-weight: 400;
@@ -43,14 +43,14 @@
 	margin-top: 9px;
 }
 
-.footer_socials {
+.footer__socials {
 	display: block;
 	width: 206px;
 	padding: 0;
 	margin-left: 70px;
 }
 
-.footer_social_list {
+.footer__social-list {
 	display: flex;
 	margin-top: 20px;
 	list-style: none;
@@ -63,19 +63,21 @@
 	transition-property: background-color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		background-color: $accent-color;
+		outline: none;
+	}
 }
 
-.dark_bg:hover,
-.dark_bg:focus {
-	background-color: var(--accent-color);
-	outline: none;
-}
-
-.dark_bg .icon_link,
-.dark_bg:focus .icon_link,
-.dark_bg:hover .icon_link {
-	fill: #ffffff;
-	outline: none;
+.icon_link {
+	.dark_bg &,
+	.dark_bg:focus &,
+	.dark_bg:hover & {
+		fill: #ffffff;
+		outline: none;
+	}
 }
 
 .contact_us {
@@ -143,14 +145,10 @@ transition-property: fill;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.button .icon_link {
+.button .icon-link {
 	display: block;
 	margin-left: 10px;
 	/* height: 24px;
 	width: 24px; */
 	fill: #ffffff;
-
-	/* transition-property: fill;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }

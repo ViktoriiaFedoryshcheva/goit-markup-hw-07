@@ -1,10 +1,10 @@
-.social_list {
+.social-list {
 	display: flex;
 	margin: 16px 32px 30px;
 	justify-content: space-between;
 }
 
-.link_social {
+.link-social {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -18,9 +18,15 @@
 	transition-property: background-color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		background-color: $accent-color;
+		outline: none;
+	}
 }
 
-.icon_link {
+.icon-link {
 	/* display: block; */
 	height: 20px;
 	width: 20px;
@@ -28,16 +34,10 @@
 	transition-property: fill;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.link_social:hover,
-.link_social:focus {
-	background-color: var(--accent-color);
-	outline: none;
-}
-
-.link_social:hover .icon_link,
-.link_social:focus .icon_link {
-	fill: #ffffff;
-	outline: none;
+	.link-social:hover &,
+	.link-social:focus & {
+		fill: #ffffff;
+		outline: none;
+	}
 }
