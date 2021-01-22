@@ -6,12 +6,13 @@
 }
 
 .about__title {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.167;
-	text-align: center;
-	letter-spacing: 0.03em;
+	@include font(36px, 700, 1.167, 0.03em);
+	// font-weight: 700;
+	// font-size: 36px;
+	// line-height: 1.167;
+	// letter-spacing: 0.03em;
 
+	text-align: center;
 	color: #212121;
 }
 
@@ -39,11 +40,12 @@
 	padding-bottom: 27px;
 	background-color: rgba(47, 48, 58, 0.8);
 
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.143;
+	@include font(14px, 700, 1.143, 0.03em);
+	// font-weight: 700;
+	// font-size: 14px;
+	// line-height: 1.143;
+	// letter-spacing: 0.03em;
 	text-align: center;
-	letter-spacing: 0.03em;
 	text-transform: uppercase;
 
 	color: #ffffff;

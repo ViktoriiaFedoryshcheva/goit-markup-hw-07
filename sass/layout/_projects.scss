@@ -54,20 +54,21 @@
 	}
 
 	&_name {
-		font-weight: bold;
-		font-size: 18px;
-		line-height: 2;
-		letter-spacing: 0.06em;
+		@include font(18px, 700, 2, 0.06em);
+		// font-weight: bold;
+		// font-size: 18px;
+		// line-height: 2;
+		// letter-spacing: 0.06em;
 		color: #212121;
 	}
 
 	&_description {
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 1.87;
-		/* identical to box height, or 187% */
-
-		letter-spacing: 0.03em;
+		@include font(16px, 400, 1.87, 0.03em);
+		// font-weight: 400;
+		// font-size: 16px;
+		// line-height: 1.87;
+		// /* identical to box height, or 187% */
+		// letter-spacing: 0.03em;
 		color: #757575;
 		margin-top: 4px;
 	}

@@ -6,11 +6,12 @@
 }
 
 .clients__title {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.167;
+	@include font(36px, 700, 1.167, 0.03em);
+	// font-weight: 700;
+	// font-size: 36px;
+	// line-height: 1.167;
+	// letter-spacing: 0.03em;
 	text-align: center;
-	letter-spacing: 0.03em;
 	color: #212121;
 }
 

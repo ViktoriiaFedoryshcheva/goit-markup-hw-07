@@ -3,12 +3,14 @@
 }
 
 .logo {
+	display: flex;
 	font-family: $secondary-font;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.192;
+	@include font(26px, 700, 1.192, 0.03em);
+	//  font-weight: 700;
+	// font-size: 26px;
+	// line-height: 1.192;
 	/* identical to box height */
-	letter-spacing: 0.03em;
+	// letter-spacing: 0.03em;
 	color: $accent-color;
 
 	&__black {

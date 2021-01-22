@@ -5,11 +5,12 @@
 	padding-bottom: 94px;
 
 	&__title {
-		font-weight: 700;
-		font-size: 36px;
-		line-height: 1.167;
+		@include font(36px, 700, 1.167, 0.03em);
+		// font-weight: 700;
+		// font-size: 36px;
+		// line-height: 1.167;
+		// letter-spacing: 0.03em;
 		text-align: center;
-		letter-spacing: 0.03em;
 		color: #212121;
 		margin-bottom: 50px;
 	}
@@ -32,14 +33,15 @@
 
 	&__person,
 	&__profession {
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 1.1875;
+		@include font(16px, 500, 1.1875, 0.03em);
+		// font-weight: 500;
+		// font-size: 16px;
+		// line-height: 1.1875;
 		/* identical to box height */
-		text-align: center;
-		letter-spacing: 0.03em;
+		// letter-spacing: 0.03em;
 		color: #212121;
 		margin-top: 30px;
+		text-align: center;
 	}
 
 	&__profession {
